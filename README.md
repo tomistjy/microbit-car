@@ -1,4 +1,4 @@
-
+本程序为发送程序！！！
 > 在 [https://tomistjy.github.io/microbit-car/](https://tomistjy.github.io/microbit-car/) 打开此页面
 
 ## 用作扩展

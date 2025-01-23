@@ -18,6 +18,13 @@ basic.forever(function () {
         "right",
         1
         )
+        basic.showLeds(`
+            . . # . .
+            . . . # .
+            # # # # #
+            . . . # .
+            . . # . .
+            `)
     } else if (cbit_输入类.Rocker(
     AnalogPin.P0,
     AnalogPin.P1,
@@ -31,6 +38,13 @@ basic.forever(function () {
         "left",
         1
         )
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
     } else if (cbit_输入类.Rocker(
     AnalogPin.P0,
     AnalogPin.P1,
@@ -44,6 +58,13 @@ basic.forever(function () {
         "up",
         1
         )
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # . # . #
+            . . # . .
+            . . # . .
+            `)
     } else if (cbit_输入类.Rocker(
     AnalogPin.P0,
     AnalogPin.P1,
@@ -57,6 +78,13 @@ basic.forever(function () {
         "down",
         1
         )
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            `)
     } else {
         radio.sendNumber(0)
         OLED.showString(
@@ -65,6 +93,13 @@ basic.forever(function () {
         "stop",
         1
         )
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
     }
     OLED.clear()
     basic.pause(50)

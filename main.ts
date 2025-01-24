@@ -1,3 +1,11 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    if (receivedNumber == 100) {
+        music.setVolume(100)
+        music.ringTone(988)
+        basic.pause(100)
+        music.stopAllSounds()
+    }
+})
 OLED.init(60)
 radio.setGroup(1)
 basic.forever(function () {
